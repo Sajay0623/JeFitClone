@@ -14,8 +14,7 @@ function HomePage() {
                     <Text fontSize={'30px'} fontWeight={'700'}>#1 Popular Workout Tracking Platform
                         Stay Strong Together</Text>
                 </Box>
-
-
+ 
             </Grid>
 
 
