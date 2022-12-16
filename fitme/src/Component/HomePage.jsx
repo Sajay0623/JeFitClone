@@ -14,13 +14,16 @@ function HomePage() {
                     <Text fontSize={'30px'} fontWeight={'700'}>#1 Popular Workout Tracking Platform
                         Stay Strong Together</Text>
                 </Box>
+ 
                 <div id="grid" >
                     <div grid-area:a></div>
                     <div grid-area:b></div>
                     <div grid-area:c></div>
 
                 </div>
-
+ 
+ 
+ 
             </Grid>
 
 
