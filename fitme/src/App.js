@@ -1,13 +1,13 @@
 import './App.css';
-// import Navbar from './Component/Navbar';
-import { Container } from "@chakra-ui/react"
-import HomePage from './Component/HomePage';
+import AllRoutes from './Component/AllRoutes';
+
+
 
 function App() {
   return (
-    < Container className="Container">
-      <HomePage />
-    </Container>
+    <div className="App">
+      <AllRoutes />
+    </div>
   );
 }
 
