@@ -9,7 +9,7 @@ export default function Coach() {
         <Box>
             <Box bg='#F0FFF0' pb={100}>
                 <Box><Navbar /></Box>
-                {/* background box */}
+
                 <Box w='80%' bg='white' m='auto' mt={100} pt={1}>
                     <Box w='80%' m='auto' pb={100}>
                         <Box w='100%' m='auto' mt={130}>

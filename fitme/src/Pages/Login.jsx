@@ -6,9 +6,9 @@ export default function Login() {
     const [login, setlogin] = useState(ldata)
 
     const handlechange = (e) => {
-        const { type, value, name } = e.target;
+        const { value, name } = e.target;
 
-     
+
         setlogin({ ...login, [name]: value })
     }
     const handleclick = () => {
@@ -17,7 +17,7 @@ export default function Login() {
         for (let i = 0; i < data.length; i++) {
             if (login.username === data[i].username && login.password === data[i].password || login.username === data[i].email && login.password === data[i].password) {
                 alert('Login Successful')
-                return <Navigate to='/'></Navigate>
+                return <Navigate Navigate to='/' ></Navigate >
             }
         }
         alert('Wrong credential')
@@ -39,7 +39,7 @@ export default function Login() {
                         <Input onChange={handlechange} name='username' value={username} h={12} type='text' placeholder='Username or email' bg='white' />
                         <FormLabel mt={5}>Password</FormLabel>
                         <Input onChange={handlechange} name='password' value={password} h={12} type='password' placeholder='Password' bg='white' />
-                        <Button onClick={handleclick} mt={5} w='full' borderRadius='full' color='white' bg='#0693e3'> CREATE ACCOUNT</Button>
+                        <Button onClick={handleclick} mt={5} w='full' borderRadius='full' color='white' bg='#0693e3'> Log In</Button>
                     </FormControl>
                 </Box>
                 <Text fontSize={20} py={10}>Or continue with</Text>
@@ -55,7 +55,7 @@ export default function Login() {
                     </Box>
 
                 </Box>
-                <Text mt={10} >New to JEFIT?
+                <Text mt={10} >New to FitMe?
                     <Link to='/signup'>Create an account</Link></Text>
             </Box>
         </Box>

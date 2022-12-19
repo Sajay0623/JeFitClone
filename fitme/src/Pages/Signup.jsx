@@ -12,7 +12,7 @@ export default function Signup() {
     let arr = JSON.parse(localStorage.getItem('userdata')) || [];
     const handleclick = () => {
         if (userdata.password !== userdata.confirmpassword) {
-            alert('Reenter your password')
+            alert('Re-Enter your password')
             return;
         }
         arr.push(userdata)
@@ -57,7 +57,7 @@ export default function Signup() {
                     </FormControl>
                 </Box>
                 <Text mt={10} >Already a member?
-                    <Link to='/login'>Sign up</Link></Text>
+                    <Link to='/login'>Sign In</Link></Text>
             </Box>
         </Box>
     )

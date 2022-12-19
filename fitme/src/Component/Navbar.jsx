@@ -1,7 +1,7 @@
-import { Image, Box, Spacer, Text, Flex, Select, Center, Button, VStack, Heading } from '@chakra-ui/react'
+import { Image, Box, Text, Flex, Center, Button } from '@chakra-ui/react'
 import Dropdown from './Dropdown'
-import { Link, Redirect, NavLink, useNavigate } from 'react-router-dom'
-import Login from '../Pages/Login'
+import { Link, useNavigate } from 'react-router-dom'
+
 
 
 
@@ -10,9 +10,7 @@ const plan = ['Pro-designd Plans', 'Create My Plane']
 const section = []
 export default function Navbar() {
     const navigate = useNavigate()
-    // const tologin=()=>{
-    //     navigate('/login')
-    // }
+
 
     return (
         <Center>
@@ -22,7 +20,7 @@ export default function Navbar() {
                     <Flex>
                         <Box w={130} my={2}>
                             <Link to='/'>
-                                <Image w='100%' src='https://www.jefit.com/wp/wp-content/uploads/2017/07/cropped-logo_155_40_white-150x40.webp' />
+                                <Image w='100%' src='https://i.postimg.cc/hjWD2by0/Fit-Me-removebg-preview.png' />
                             </Link>
                         </Box>
                         <Box my={2}>

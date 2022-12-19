@@ -1,10 +1,8 @@
 import '../Css/Dropdown.css'
 import { Box } from '@chakra-ui/react'
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-// import { Dropdown } from 'react-bootstrap';
+import React from 'react';
 
-// import './styles.css';
+
 
 export default function Dropdown({ value, title }) {
 
