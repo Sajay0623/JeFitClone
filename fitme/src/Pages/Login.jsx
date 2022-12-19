@@ -8,11 +8,11 @@ export default function Login() {
     const handlechange = (e) => {
         const { type, value, name } = e.target;
 
-        // const val=type==='password'?Number(value):value;
+     
         setlogin({ ...login, [name]: value })
     }
     const handleclick = () => {
-        let data = JSON.parse(localStorage.getItem('userdata')) || []
+        let data = JSON.parse(localStorage.getItem('userdata'))
         console.log(data)
         for (let i = 0; i < data.length; i++) {
             if (login.username === data[i].username && login.password === data[i].password || login.username === data[i].email && login.password === data[i].password) {
@@ -39,7 +39,7 @@ export default function Login() {
                         <Input onChange={handlechange} name='username' value={username} h={12} type='text' placeholder='Username or email' bg='white' />
                         <FormLabel mt={5}>Password</FormLabel>
                         <Input onChange={handlechange} name='password' value={password} h={12} type='password' placeholder='Password' bg='white' />
-                        <Button onClick={handleclick} mt={5} w='full' borderRadius='full' color='white' bg='#0693e3'> LOG IN</Button>
+                        <Button onClick={handleclick} mt={5} w='full' borderRadius='full' color='white' bg='#0693e3'> CREATE ACCOUNT</Button>
                     </FormControl>
                 </Box>
                 <Text fontSize={20} py={10}>Or continue with</Text>
