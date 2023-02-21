@@ -17,7 +17,7 @@ export default function Login() {
         for (let i = 0; i < data.length; i++) {
             if (login.username === data[i].username && login.password === data[i].password || login.username === data[i].email && login.password === data[i].password) {
                 alert('Login Successful')
-                return <Navigate Navigate to='/' ></Navigate >
+                return <Navigate to='/' />
             }
         }
         alert('Wrong credential')
@@ -27,8 +27,10 @@ export default function Login() {
     const { username, password } = login
     return (
         <Box h='1000px' w='1500px' bgSize='100%' backgroundImage="url('https://www.jefit.com/images/loginbg.jpg')">
-            <Box m='auto' w='7%' py={10}>
-                <Image src='https://www.jefit.com/images/jefit_logo_website_signuplogin.svg' />
+            <Box m='auto' w='20%' py={10}>
+                <Link to='/'>
+                    <Image w='100%' src='https://i.postimg.cc/hjWD2by0/Fit-Me-removebg-preview.png' />
+                </Link>
             </Box>
 
             <Box bg='#E0FFFF' w='40%' m='auto' borderRadius={15} pt={20} pb={70} >

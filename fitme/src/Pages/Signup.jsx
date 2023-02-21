@@ -26,8 +26,10 @@ export default function Signup() {
     return (
 
         <Box w='full' bg='#E6E6FA' >
-            <Box m='auto' w='7%' py={10}>
-                <Image src='https://www.jefit.com/images/jefit_logo_website_signuplogin.svg' />
+            <Box m='auto' w='20%' py={10}>
+                <Link to='/'>
+                    <Image w='100%' src='https://i.postimg.cc/hjWD2by0/Fit-Me-removebg-preview.png' />
+                </Link>
             </Box>
             <Box bg='#E0FFFF' w='40%' m='auto' borderRadius={15} pt={20} pb={70} >
                 <Heading size='2xl'>CREATE ACCOUNT</Heading>

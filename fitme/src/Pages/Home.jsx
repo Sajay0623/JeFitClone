@@ -1,5 +1,5 @@
 import Navbar from "../Component/Navbar";
-import { Image, Box, Spacer, Text, Flex, Select, Center, Button, VStack, Heading, background, Stack, Container } from '@chakra-ui/react'
+import { Image, Box,  Text, Flex,  Center, Button,  Heading, Stack} from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import Footer from "../Component/Footer";
 
